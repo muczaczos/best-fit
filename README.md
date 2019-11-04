@@ -1,4 +1,9 @@
-# wtf-gulp-starter
+# The Best Fit
+
+Find best fited price to your gross amount. Put range , tax, and gross amount. Then push enter and That's it!
+That app is very helpful in tax agent office. 
+
+If you want install app in development enviroment, execute this commands from CLI. 
 
 `npm install -g gulp-cli`
 
@@ -7,4 +12,4 @@
 `gulp`
 
 To publish your page using github pages use `npm run deploy`
-# best-fit
+
