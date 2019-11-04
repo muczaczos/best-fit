@@ -62,14 +62,14 @@ body {
   }
   &__net {
     width: 280px;
-    height: 280px;
+    height: 140px;
     background: url("../assets/img/water-glass.svg") center center;
     background-size: contain;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 112px;
+    font-size: 50px;
     &__value {
       display: block;
       padding-top: 64px;
