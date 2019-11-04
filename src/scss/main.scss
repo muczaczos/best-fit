@@ -24,7 +24,7 @@ body {
   padding: 16px;
 }
 
-.button-add {
+.button-fit {
   padding: 12px;
   font-size: 18px;
   color: #000;
@@ -36,35 +36,15 @@ body {
   margin: 40px 0 26px;
 }
 
-.button-remove {
-  background: none;
-  border: none;
-  min-width: 216px;
-  padding: 12px;
-  font-size: 14px;
-  color: #f5e5e7;
-}
-
-.counter {
-  width: 280px;
-  height: 280px;
-  background: url("../assets/img/water-glass.svg") center center;
-  background-size: contain;
+.fields {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000;
-  font-size: 112px;
-  &__value {
-    display: block;
-    padding-top: 64px;
+  flex-direction: column;
+  align-items: flex-end;
+  &__heading {
+    font-size: 55px;
+    margin: 0;
+    padding: 0 0 64px 0;
   }
-}
-
-.heading {
-  font-size: 55px;
-  margin: 0;
-  padding: 0 0 64px 0;
 }
 
 .main {
@@ -77,12 +57,19 @@ body {
     color: lightgray;
     font-family: Roboto;
   }
-}
-
-table {
-  color: lightgray;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
+  &__net {
+    width: 280px;
+    height: 280px;
+    background: url("../assets/img/water-glass.svg") center center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 112px;
+    &__value {
+      display: block;
+      padding-top: 64px;
+    }
+  }
 }

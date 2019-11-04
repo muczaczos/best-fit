@@ -20,9 +20,9 @@
 
   <link rel="manifest" href="manifest.json" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="" />
 
-  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+  <link rel="icon" type="image/png" href="" />
 
   <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -30,13 +30,28 @@
 <body>
 
   <main class="main">
-    <h1 class="heading">The Best Fit</h1>
-    <div class="counter">
-      <span class="counter__value coutner__value--js">7</span>
+
+    <section class="fields">
+      <h1 class="fields__heading">The Best Fit</h1>
+      <p class="fields__paragraph">
+        <label for="age">Gross Amount:</label>
+        <input type="number" name="gross-amount" id="gross-amount" value="0" step="any">
+      </p>
+      <p class="fields__paragraph">
+        <label for="age">Range from:</label>
+        <input type="number" name="range-from" id="range-from" value="0" step=".1">
+      </p>
+      <p class="fields__paragraph">
+        <label for="age">Range to:</label>
+        <input type="number" name="range-to" id="range-to" value="0" step=".1">
+      </p>
+    </section>
+
+    <div class="main__net">
+      <span class="main__net-amount">7</span>
     </div>
-    <button class="button-add button-add--js">dodaj szklankę</button>
-    <button class="button-remove button-remove--js">usuń szklankę</button>
-    <a class="main__link" href="history.html">Historia</a>
+
+    <button class="button-fit button-fit--js">Fit</button>
   </main>
 
   <script src="js/main.js"></script>
