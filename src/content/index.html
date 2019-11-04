@@ -35,7 +35,16 @@
       <h1 class="fields__heading">The Best Fit</h1>
       <p class="fields__paragraph">
         <label for="age">Gross Amount:</label>
-        <input type="number" name="gross-amount" id="gross-amount" value="0" step="any">
+        <input type="number" id="gross">
+      </p>
+      <p class="fields__paragraph">
+        <label for="age">Tax:</label>
+        <select class="fields__tax" name="tax" id="tax">
+          <option value="1.07">Tax 7%</option>
+          <option value="1.05">Tax 5%</option>
+          <option value="1.08">Tax 8%</option>
+          <option value="1.23">Tax 23%</option>
+        </select>
       </p>
       <p class="fields__paragraph">
         <label for="age">Range from:</label>
@@ -48,7 +57,7 @@
     </section>
 
     <div class="main__net">
-      <span class="main__net-amount">7</span>
+      <span class="main__net-amount main__net-amount--js">7</span>
     </div>
 
     <button class="button-fit button-fit--js">Fit</button>
