@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>The Best Fit</title>
+  <meta name="description" content="Description" />
+
+  <!-- Title -->
+  <meta property="og:title" content="The Best Fit" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description"
+    content="Find best fited price to your gross amount. Put range , tax, and gross amount. Then push enter and That's it! That app is very helpful in tax agent office." />
+  <!-- full url with http(s) ie. -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie.. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="" />
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="" />
+
+  <link rel="icon" type="image/png" href="" />
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+  <main class="main">
+
+    <section class="fields">
+      <h1 class="fields__heading">The Best Fit</h1>
+      <p class="fields__paragraph">
+        <label for="age">Gross Amount:</label>
+        <input type="number" id="gross">
+      </p>
+      <p class="fields__paragraph">
+        <label for="age">Tax:</label>
+        <select class="fields__tax" name="tax" id="tax">
+          <option value="1.07">Tax 7%</option>
+          <option value="1.05">Tax 5%</option>
+          <option value="1.08">Tax 8%</option>
+          <option value="1.23">Tax 23%</option>
+        </select>
+      </p>
+      <p class="fields__paragraph">
+        <label for="age">Range from:</label>
+        <input type="number" name="range-from" id="range-from" value="0" step=".1">
+      </p>
+      <p class="fields__paragraph">
+        <label for="age">Range to:</label>
+        <input type="number" name="range-to" id="range-to" value="0" step=".1">
+      </p>
+    </section>
+
+    <div class="main__net">
+      <span class="main__net-amount main__net-amount--js">7</span>
+    </div>
+
+    <button class="button-fit button-fit--js">Fit</button>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
