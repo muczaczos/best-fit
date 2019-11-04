@@ -1,16 +1,88 @@
 @import "_normalize";
 @import "_variables";
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
 
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: #fff;
+  background: #336600;
+  font-family: Roboto;
+  font-weight: 500;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.button-add {
+  padding: 12px;
+  font-size: 18px;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  min-width: 216px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 40px 0 26px;
+}
+
+.button-remove {
+  background: none;
+  border: none;
+  min-width: 216px;
+  padding: 12px;
+  font-size: 14px;
+  color: #f5e5e7;
+}
+
+.counter {
+  width: 280px;
+  height: 280px;
+  background: url("../assets/img/water-glass.svg") center center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 112px;
+  &__value {
+    display: block;
+    padding-top: 64px;
+  }
+}
+
+.heading {
+  font-size: 55px;
+  margin: 0;
+  padding: 0 0 64px 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__link {
+    padding: 64px;
+    text-decoration: none;
+    color: lightgray;
+    font-family: Roboto;
+  }
+}
+
+table {
+  color: lightgray;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
 }
