@@ -5,6 +5,7 @@
 
 Find best fited price to your gross amount. Put range , tax, and gross amount. Then push enter and That's it!
 That app is very helpful in tax agent office. 
+https://muczaczos.github.io/best-fit/
 
 If you want install app in development enviroment, execute this commands from CLI. 
 
